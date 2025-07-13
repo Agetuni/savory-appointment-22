@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
+import { Header } from "./components/header";
 
-const BravoPage: React.FC = () => {
+export default function Page() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-200 to-purple-200">
-      <h1 className="text-5xl font-extrabold text-gray-900 shadow-md">Bravo</h1>
+    <main className="min-h-screen flex flex-col bg-gray-50">
+      <Header />
+      <div className="flex-1 flex items-center justify-center">
+        <h1 className="text-5xl font-bold text-gray-900 tracking-tight">Bravo</h1>
+      </div>
     </main>
   );
-};
-
-export default BravoPage;
+}
